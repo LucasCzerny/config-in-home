@@ -159,3 +159,14 @@ source ~/.local/vulkan/setup-env.sh
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 . "$HOME/.cargo/env"
+
+eval "$(zoxide init bash)"
+
+lf_scuffed_af() {
+  export LF_START_PWD="$PWD"
+  lf
+}
+
+alias lf='lf_scuffed_af'
+
+source /home/lucas/.config/broot/launcher/bash/br
